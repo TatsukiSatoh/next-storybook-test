@@ -3,6 +3,16 @@ import Button from './index';
 export default {
   title: 'Button',
   component: Button,
+  argTypes: {
+    color: {
+      options: ['primary', 'default', 'danger'],
+      control: { type: 'radio' },
+    },
+    size: {
+      options: ['sm', 'base', 'lg'],
+      control: { type: 'radio' },
+    },
+  },
 };
 
 const Template = (args) => <Button {...args} />;
